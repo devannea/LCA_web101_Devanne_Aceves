@@ -1,0 +1,54 @@
+body {
+    margin: 5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+header {
+    padding-bottom: 1%;
+}
+
+h1 {
+    color: darkblue;
+}
+
+h3 {
+    color: lightblue;
+}
+
+p {
+    color: gray;
+}
+
+h2 {  
+    background: lightblue;
+    color: #3471BF;
+    text-align: center;
+}
+
+ul {
+    color: gray;
+    list-style-type: none;
+}
+
+#right-align {
+    text-align: right;
+    float: right;
+    margin-top: -12%;
+}
+
+.left-content {
+    float: left;
+    width: 49%;
+}
+
+.right-content {
+    float: right;
+    width: 49%;
+}
+
+#summary {
+    width: 75%;
+}
