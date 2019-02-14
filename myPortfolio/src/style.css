@@ -3,6 +3,7 @@ body {
     background-image: url(./myDesktopBackground.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    margin: 0;
 }
 
 nav {
