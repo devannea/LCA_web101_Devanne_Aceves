@@ -1,0 +1,97 @@
+  body {
+    font-family: Georgia, serif;
+    background-color:black;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 2%;
+  }
+  
+  .logo {
+    filter: none;
+    background-color: black;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 5px;
+  }
+  
+  header {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    width: 100%;
+    margin: 1%;
+  }
+  
+  main {
+    height: auto;
+    width: 100%;
+  }
+  /*this is a note*/  
+  nav > a {
+    margin-left: -1px;
+    height: 0;
+    width: 8px;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 12px;
+    border-radius: 10px;
+    background: transparent;
+    padding: 25px; 
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid white;
+  }
+  
+  .has-border {
+    border-radius: 10px;
+    border: 2px solid white;
+    background: transparent;
+    padding: 25px;
+    margin-right: 15px;
+    text-align: center; 
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 285px;
+  }
+  
+  #profile-pic {
+    filter: none;
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    margin-left: 0.85in;
+  }
+
+  h1 {
+    color: white;
+    font-size: 30px;
+    margin-top: 2.5in;
+    margin-right: 1.25in;
+    text-align: center;
+  }
+  
+  h2 {
+    color: white;
+    padding-top: 3in;
+    margin-left: -1.55in;
+    width: 300px;
+    text-align: center;
+  }
+  
+  button {
+    margin-left: -1.05in;
+    width: 200px;
+    height: 50px;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: transparent;
+    margin-top: 3.55in;
+    padding: 15px;
+    text-align: center;
+    color: white;
+  }
