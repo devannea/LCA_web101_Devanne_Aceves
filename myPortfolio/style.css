@@ -92,6 +92,19 @@
   }
 
 @media (max-width:800px) {
+  body {
+    background-size: 100% 150%;
+  }
+
+  nav > a {
+    float: left;
+    color: #e5e5e5;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
   h1 {
     color: white;
     font-size: 40px;
@@ -124,6 +137,10 @@
 }
 
 @media (max-width:400px) {
+  body {
+    background-size: 100% 200%;
+  }
+
   nav > a {
     float: left;
     color: #e5e5e5;
