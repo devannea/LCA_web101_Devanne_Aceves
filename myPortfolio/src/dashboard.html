@@ -14,85 +14,87 @@
             <h4>To-Do List</h4>
             <input type="text" name="Add task">
             <ul>
-                <li><a href="#">Finish coding dashboard</a></li>
-                <li><a href="#">Start week 3 day 2 pre-homework</a></li>
-                <li><a href="#">Take notes over grids</a></li>
+                <li>Finish coding dashboard</li>
+                <li>Start week 3 day 2 pre-homework</li>
+                <li>Take notes over grids</li>
             </ul>
         </nav>
         <main>
-            <div class="holder">
-                <fieldset id="holder">
-                    <form name="calculator">
-                        <input id="display" type="text" name="display" readonly>
-                        <br>
-                        <input class="button digits" type="button" value="7" onclick="calculator.display.value += '7'">
-                        <input class="button digits" type="button" value="8" onclick="calculator.display.value += '8'">
-                        <input class="button digits" type="button" value="9" onclick="calculator.display.value += '9'">
-                        <input class="button mathButtons" type="button" value="+" onclick="calculator.display.value += ' + '">
-                        <br>
-                        <input class="button digits" type="button" value="4" onclick="calculator.display.value += '4'">
-                        <input class="button digits" type="button" value="5" onclick="calculator.display.value += '5'">
-                        <input class="button digits" type="button" value="6" onclick="calculator.display.value += '6'">
-                        <input class="button mathButtons" type="button" value="-" onclick="calculator.display.value += ' - '">
-                        <br>
-                        <input class="button digits" type="button" value="1" onclick="calculator.display.value += '1'">
-                        <input class="button digits" type="button" value="2" onclick="calculator.display.value += '2'">
-                        <input class="button digits" type="button" value="3" onclick="calculator.display.value += '3'">
-                        <input class="button mathButtons" type="button" value="x" onclick="calculator.display.value += ' * '">
-                        <br>
-                        <input id="clearButton" class="button" type="button" value="C" onclick="calculator.display.value = ''">
-                        <input class="button digits" type="button" value="0" onclick="calculator.display.value += '0'">
-                        <input class="button mathButtons" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
-                        <input class="button mathButtons" type="button" value="/" onclick="calculator.display.value += ' / '">
-                    </form>
-                </fieldset>
+            <div class="calculator">
+                <div class="screen"></div>
+                <div class="buttons">
+                    <button class="firstrow">7</button>
+                    <button class="firstrow">8</button>
+                    <button class="firstrow">9</button>
+                    <button class="firstrow">+</button>
+                    <button class="secondrow">4</button>
+                    <button class="secondrow">5</button>
+                    <button class="secondrow">6</button>
+                    <button class="secondrow">-</button>
+                    <button class="thirdrow">1</button>
+                    <button class="thirdrow">2</button>
+                    <button class="thirdrow">3</button>
+                    <button class="thirdrow">*</button>
+                    <button>C</button>
+                    <button>0</button>
+                    <button>=</button>
+                    <button>/</button>
+                </div>
             </div>
         </main>
         <aside>
-        <h4>Monday February 18th, 2019 8:28PM</h4>
+            <div class="clock">
+                <div class="time">10:40 AM</div>
+                <div class="date">Monday February 10th</div>
+            </div>
             <div class="calendar">
-                <h5>February</h5>
-                <div class="days-of-the-week">
-                <h6>S</h6>
-                <h6>M</h6>
-                <h6>T</h6>
-                <h6>W</h6>
-                <h6>T</h6>
-                <h6>F</h6>
-                <h6>S</h6>
-                </div>
-                <div class="days">
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                        <li>7</li>
-                        <li>8</li>
-                        <li>9</li>
-                        <li>10</li>
-                        <li>11</li>
-                        <li>12</li>
-                        <li>13</li>
-                        <li>14</li>
-                        <li>15</li>
-                        <li>16</li>
-                        <li>17</li>
-                        <li>18</li>
-                        <li>19</li>
-                        <li>20</li>
-                        <li>21</li>
-                        <li>22</li>
-                        <li>23</li>
-                        <li>24</li>
-                        <li>25</li>
-                        <li>26</li>
-                        <li>27</li>
-                        <li>28</li>
-                    </ul>
-                </div>
+               <div class="month">February 2019</div>
+               <div class="daysoftheweek">
+                   <div>S</div>
+                   <div>M</div>
+                   <div>T</div>
+                   <div>W</div>
+                   <div>T</div>
+                   <div>F</div>
+                   <div>S</div>
+               </div>
+               <div class="days">
+                   <div class="lastmonth">27</div>
+                   <div class="lastmonth">28</div>
+                   <div class="lastmonth">29</div>
+                   <div class="lastmonth">30</div>
+                   <div class="lastmonth">31</div>
+                   <div>1</div>
+                   <div>2</div>
+                   <div>3</div>
+                   <div>4</div>
+                   <div>5</div>
+                   <div>6</div>
+                   <div>7</div>
+                   <div>8</div>
+                   <div>9</div>
+                   <div>10</div>
+                   <div>11</div>
+                   <div>12</div>
+                   <div>13</div>
+                   <div>14</div>
+                   <div>15</div>
+                   <div>16</div>
+                   <div>17</div>
+                   <div>18</div>
+                   <div>19</div>
+                   <div>20</div>
+                   <div>21</div>
+                   <div>22</div>
+                   <div>23</div>
+                   <div>24</div>
+                   <div>25</div>
+                   <div>26</div>
+                   <div>27</div>
+                   <div>28</div>
+                   <div class="nextmonth">1</div>
+                   <div class="nextmonth">2</div>
+               </div>
             </div>
         </aside>
         <div class="banner">div.banner</div>
