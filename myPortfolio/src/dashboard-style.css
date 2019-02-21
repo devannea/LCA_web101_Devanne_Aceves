@@ -42,6 +42,68 @@ main {
 .thirdrow {
     margin-bottom: 10%;
 }
+.flexcalculator {
+    margin: 3%;
+    width: 60%;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flexbox;
+    flex-direction: row;
+    align-items: center;
+}
+.newscreen {
+    margin: 3% 0% 3% 11%;
+    padding: 12% 0% 12% 0%;
+    background-color: white;
+    width: 78%;
+}
+.newfirstrow {
+    margin: 3% 0% 3% 11%;
+}
+.newsecondrow {
+    margin: 3% 0% 3% 11%;
+}
+.newthirdrow {
+    margin: 3% 0% 3% 11%;
+}
+.newfourthrow {
+    margin: 3% 0% 3% 11%;
+}
+.nb {
+    background-color: orange;
+    border: 1px solid darkorange;
+    border-radius: 5px;
+    color: white;
+    margin: 0%;
+    padding: 8% 7% 8% 7%;
+    text-align: center;
+    width: 20%;
+}
+#C {
+    background-color: red;
+    border: 1px solid darkred
+}
+#Eq {
+    background-color: lightgray;
+    border: 1px solid darkgray;
+}
+#plus {
+    background-color: darkgray;
+    border: 1px solid #555555;
+}
+#minus {
+    background-color: darkgray;
+    border: 1px solid #555555;
+}
+#times {
+    background-color: darkgray;
+    border: 1px solid #555555;
+}
+#over {
+    background-color: darkgray;
+    border: 1px solid #555555;
+}
 nav {
     grid-area: nav;
     background-color: lightsalmon;
