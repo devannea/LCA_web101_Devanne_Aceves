@@ -1,0 +1,96 @@
+body {
+    background-color: #EDEDED;
+    background-size: 100% 100%;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #4C8F96;
+    color: white;
+    padding-left: 15%;
+    padding-right: 15%;
+    grid-template-columns: 1fr 2fr;
+}
+#logo {
+    background-color: #1B2130;
+    color: white;
+    width: 25%;
+    margin: 
+    padding: 4% 3% 4% 3%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    grid-column: 1/2;
+}
+nav {
+    grid-column: 2/3;
+}
+.not-active {
+    background-color: #1B2130;
+}
+#active {
+    background-color: #335F64;
+}
+main {
+    margin-left: 15%;
+    margin-right: 15%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+.great-hair {
+    background-color: white;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    color: #1B2130;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    border: 2px solid #5FB3BD;
+    border-radius: 5px;
+}
+#experts {
+    float: right;
+    width: 50%;
+    margin-top: 10%;
+    margin-right: 5%;
+}
+.four-colums {
+    display: flex;
+    flex-direction: row;
+}
+.pic-border {
+    border: 5px solid #5FB3BD;
+    border-radius: 5px;
+}
+.up-hd {
+    font-size: 18px;
+}
+.up-p {
+    margin-top: -7%;
+    font-size: 12px;
+    color: #464646;
+    line-height: 25px;
+}
+#first {
+    font-family: sans-serif;
+    width: 25%;
+}
+#second {
+    font-family: sans-serif;
+    width: 25%;
+}
+#third {
+    font-family: sans-serif;
+    width: 25%;
+}
+#fourth {
+    font-family: sans-serif;
+    width: 25%;
+}
+footer {
+    background-color: #4C8F96;
+    color: white;
+}
+.social-media {
+    background-color: #1B6068;
+}
+//*borders will be #5FB3BD, icons will be #1B6068, p will be #464646*//
