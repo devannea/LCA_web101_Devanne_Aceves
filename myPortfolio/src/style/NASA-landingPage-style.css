@@ -9,7 +9,7 @@ body {
 main {
     display: flex;
     justify-content: center;
-    background-image: url(./NASAbackground.jpg);
+    background-image: url(../images/NASAbackground.jpg);
     background-repeat: no-repeat;
     height: 450px;
     margin: 0%;
