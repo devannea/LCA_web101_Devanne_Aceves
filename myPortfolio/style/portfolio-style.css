@@ -1,0 +1,177 @@
+body {
+    background-image: url(../images/myDesktopBackground.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    grid-area: header;
+}
+.my-name {
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+.web-dev {
+    margin: auto;
+    text-align: center;
+    color: darkgray;
+}
+.logo-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+.profile-picture {
+    border-radius: 50%;
+}
+main {
+    grid-area: main;
+}
+.half-and-half {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "projects"
+        "video-and-form"
+}
+.projects {
+    grid-area: projects;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+.NASA {
+    margin: auto;
+    display: block;
+}
+.HAIR {
+    margin: auto;
+    display: block;
+}
+.DASH {
+    margin: auto;
+    display: block;
+}
+.video-and-form {
+    grid-area: video-and-form;
+}
+.iframe {
+    margin: auto;
+    display: block;
+}
+.pumpkin {
+    margin: auto;
+    display: block;
+}
+h3 {
+    text-align: center;
+    color: black;
+    margin-top: -3%;
+}
+input {
+    margin-left: 10%;
+    margin-bottom: 5px;
+}
+textarea {
+    margin-left: 10%;
+}
+footer {
+    grid-area: footer;
+}
+.github {
+    margin: auto;
+    display: block;
+}
+@media (min-width: 700px) {
+    body {
+        
+    }
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "header"    "header"
+            "main"      "main"
+            "footer"    "footer"
+    }
+    .my-name {
+        font-size: 48px;
+    }
+    .web-dev {
+        font-size: 24px;
+    }
+    .profile-picture {
+        width: 150px;
+        height: 150px;
+    }
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
+    .half-and-half {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "projects"  "video-and-form"
+            "projects"  "video-and-form"
+    }
+    .projects {
+        grid-area: projects;
+        margin-left: -45%;
+        margin-top: 3%;
+    }
+    .NASA {
+        width: 400px;
+        height: auto;
+    }
+    .HAIR {
+        width: 400px;
+        height: auto;
+    }
+    .DASH {
+        width: 400px;
+        height: auto;
+    }
+    .video-and-form {
+        grid-area: video-and-form;
+        margin-left: 45%;
+        margin-top: -59.1%;
+    }
+    .iframe {
+        width: 400px;
+        height: 225px;
+        margin-bottom: 3%;
+    }
+    .pumpkin {
+        width: 400px;
+        height: auto;
+    }
+    h3 {
+        transform: translateY(50px);
+        margin-bottom: 35px;
+    }
+    #too-high {
+        transform: translateY(0px);
+    }
+    #too-low {
+        transform: translateY(10px);
+        margin-bottom: 0;
+    }
+    .inquiry {
+        margin-bottom: 5%;
+    }
+    form {
+        margin-top: 10%;
+    }
+    input {
+        margin-left: 25%;
+    }
+    textarea {
+        margin-left: 25%;
+    }
+    #reset {
+        margin-left: 0%;
+    }
+    footer {
+        margin-top: 5%;
+    }
+}
