@@ -78,6 +78,7 @@ textarea {
 }
 footer {
     grid-area: footer;
+    margin-bottom: 3%;
 }
 .github {
     margin: auto;
