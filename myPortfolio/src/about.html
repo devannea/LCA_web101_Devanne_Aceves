@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style/about-style.css" />
+    <title>About Me</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <a href="../index.html">Home</a>
+          <a href="src/resume.html" target="_blank">Resume</a>
+          <a class="active">About Me</a>
+          <a href="src/blog.html">My Blog</a>
+          <a>Contact Me</a>
+        </nav>
+    </header>
+    <!-- I used flexbox for the majority of my layout, but I did use grid for a small portion -->
+    <!-- I used p, div, hr, blockquote, form, and fieldset -->
+    <!-- I used b, i, em, strong, big, small, del, and cite -->
+    <main>
+        <div class="section1">
+            <p><big>Hello, my name is <b>Devanne Aceves</b> and I am a web development student at <strong>Lubbock Coding Academy</strong>.</big></p>
+            <img src="../images/myProfilePic.jpg" alt="Picture of Me" id="smooth" width="250px">
+        </div>
+        <hr>
+        <hr>
+        <div class="section2">
+            <p class="item2">I grew up in <b>Midland, Texas</b> - a small, but <i>somewhat</i> overpopulated city. I lived with my grandparents, my mother, and my little brother. I attribute my family-oriented personality to this.</p>
+            <img src="../images/midlandTX.jpg" alt="Map of Midland" class="item2" width="100px">
+            <p class="item2">A few months before I turned 19, I moved to <b>Lubbock, Texas</b>, to live with my wonderful fiancé. We have a shih tzu and an african pygmy hedgehog - <i>very fun!</i></p>
+            <img src="../images/lubbockTX.jpg" alt="Map of Lubbock" class="item2" width="100px">
+        </div>
+        <div class="section3">
+            <div class="item3" id="myGrandparents">
+                <img src="../images/myGrandparents.jpg" alt="My Grandparents" title="My Grandparents" class="smooth" width="150px">
+            </div>
+            <div class="item3" id="myMother">
+                <img src="../images/myMother.jpg" alt="My Mother" title="Me and My Mother" class="smooth" width="150px">
+            </div>
+            <div class="item3" id="myLittleBrother">
+                <img src="../images/myLittleBrother.jpg" alt="My Little Brother" title="Me and My Little Brother" class="smooth" width="150px">
+            </div>
+            <div class="item3" id="myFiance">
+                <img src="../images/myFiance.jpg" alt="My Fiance" title="My Fiancé and I" class="smooth" width="150px">
+            </div>
+            <div class="item3" id="myPuppy">
+                <img src="../images/myPuppy.jpg" alt="My Puppy" title="My Shih Tzu, Bubby" class="smooth" width="150px">
+            </div>
+            <div class="item3">
+                <img src="../images/myHedgehog.jpg" alt="My Hedgehog" title="My Hedgehog, Pumpkin" class="smooth" width="150px">
+            </div>
+        </div>
+        <hr>
+        <hr>
+        <div class="section4">
+            <img src="../images/myHighSchool.jpg" alt="My High School" class="myHighSchool" width="400px">
+            <p>I attended <strong>Early College High School at Midland College</strong>, where I earned my associate's degree while I completed high school. Most college courses I took were dual credit and it was a very heavy workload. My senior year, I ended up completing more than 10 classes at a time for high school and college. This was also where I got my first part-time job. I worked as a <em>math tutor</em> at <b>Midland College's Math Lab</b> where I would work with students in middle school, high school, and college. I would help students with developmental math, geometry, algebra, pre-calculus, and trigonometry. I graduated in May of 2017.</p>
+        </div>
+        <hr>
+        <hr>
+        <p><big>Some of my hobbies and interests include:</big></p><br>
+        <div class="section5">
+            <div id="brownie"><img src="../images/brownie.png" alt="Baking" title="Baking" width="50px" class="icon"></div>
+            <div id="pen"><img src="../images/pen.png" alt="Calligraphy" title="Calligraphy" width="50px" class="icon"></div>
+            <div id="tablet"><img src="../images/tablet.png" alt="Digital Art" title="Digital Art" width="50px" class="icon"></div>
+            <div id="lipstick"><img src="../images/lipstick.png" alt="Makeup" title="Make-up" width="50px" class="icon"></div>
+            <div id="karaoke"><img src="../images/karaoke.png" alt="Music" title="Music" width="50px" class="icon"></div>
+            <div id="origami"><img src="../images/origami.png" alt="Origami" title="Origami" width="50px" class="icon"></div>
+            <div id="camera"><img src="../images/camera.png" alt="Photography" title="Photography" width="50px" class="icon"></div>
+            <div id="stationery"><img src="../images/stationery.png" alt="Stationery" title="Stationery" width="50px" class="icon"></div>
+            <div id="joystick"><img src="../images/joystick.png" alt="Videogames" title="Videogames" width="50px" class="icon"></div>
+        </div>
+        <p id="deleted"><small><del>Hover over the icons</del></small></p>
+        <p class="right"><small>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</small></a></p>
+        <div>
+            <blockquote><big>The first step is to establish that something is possible; then probability will occur.<br>-<cite>Elon Musk</cite></big></blockquote>
+        </div>
+        <div class="section6">
+            <p class="question">Have a question? Please fill out the form below!</p>
+            <form>
+                <fieldset>
+                    Name:<br><input type="text" placeholder="Jane Doe"><br>
+                    Email:<br><input type="email" placeholder="email@address.com"><br>
+                    Question:<br><textarea name="message" cols="42" rows="5" placeholder="Insert text here..."></textarea>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <a href="https://github.com/devannea"><img src="../images/github.png" alt="GitHub" id="github" width="50px"></a>
+        </div>
+        <div>
+            <a href="https://linkedin.com/in/https://www.linkedin.com/in/devanne-aceves/"><img src="../images/linkedin.png" alt="LinkedIn" id="linkedin" width="50px"></a>
+        </div>
+    </footer>
+</body>
+</html>
