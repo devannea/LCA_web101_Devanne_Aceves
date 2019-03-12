@@ -1,0 +1,78 @@
+body {
+    background-image: url(../images/myDesktopBackground.jpg);
+    margin: 0;
+}
+nav {
+    width: 100%;
+    margin: auto;
+    background-color: #b3b3b3;
+    overflow: hidden;
+}
+nav > a {
+    float: left;
+    color: #e5e5e5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+}
+nav > a:hover {
+    background-color: #e5e5e5;
+    color: black;
+}
+nav a.active {
+    background-color: #999999;
+    color: white;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5%;
+}
+footer {
+    background-color: #999999;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+footer > div {
+    margin: 1%;
+}
+#linkedin {
+    border-radius: 50%;
+}
+li {
+    list-style: none;
+}
+@media (max-width: 400px) {
+    nav > a {
+        padding: 7px 8px;
+        font-size: 12px;
+    }
+    main {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    big {
+        font-size: 22px;
+    }
+    small {
+        font-size: 18px;
+    }
+    p {
+        font-size: 14px;
+    }
+    fieldset {
+        font-size: 14px;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
