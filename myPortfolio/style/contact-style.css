@@ -31,6 +31,15 @@ main {
     align-items: center;
     margin-bottom: 5%;
 }
+fieldset input[type="text"] {
+    width: 350px;
+}
+fieldset input[type="email"] {
+    width: 350px;
+}
+textarea {
+    width: 350px;
+}
 footer {
     background-color: #999999;
     display: flex;
@@ -68,6 +77,15 @@ li {
     }
     fieldset {
         font-size: 14px;
+    }
+    fieldset input[type="text"] {
+        width: 250px;
+    }
+    fieldset input[type="email"] {
+        width: 250px;
+    }
+    textarea {
+        width: 250px;
     }
     footer {
         display: flex;
