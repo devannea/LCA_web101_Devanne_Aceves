@@ -1,96 +1,168 @@
 body {
-    background-image: url(../images/myDesktopBackground.jpg);
+    font-family: 'Catamaran', sans-serif;
+    background-color: #131418;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     margin: 0;
 }
+header {
+    font-size: 20px;
+}
 nav {
-    width: 100%;
-    margin: auto;
-    background-color: #b3b3b3;
-    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
 }
 nav > a {
-    float: left;
-    color: #e5e5e5;
-    text-align: center;
-    padding: 14px 16px;
+    color: #2D303A;
+    margin-top: 2%;
+    margin-right: 3%;
     text-decoration: none;
-    font-size: 16px;
 }
 nav > a:hover {
-    background-color: #e5e5e5;
-    color: black;
+    color: #ffffff;
 }
-nav a.active {
-    background-color: #999999;
-    color: white;
+#active {
+    color: #0EBEFF;
 }
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 5%;
+    color: #ffffff;
+    margin: 3%;
+    padding: 5%;
+    background-color: #2D303A;
 }
-fieldset input[type="text"] {
-    width: 350px;
-}
-fieldset input[type="email"] {
-    width: 350px;
-}
-textarea {
-    width: 350px;
-}
-footer {
-    background-color: #999999;
+.container1 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 1%;
-    padding-bottom: 1%;
 }
-footer > div {
-    margin: 1%;
+.personally {
+    color: #0EBEFF;
 }
-#linkedin {
+.container2 {
+    margin-right: 3%;
+}
+.contactme {
+    width: 10%;
+    height: 10%;
+}
+fieldset {
+    border: none;
+}
+h2 {
+    margin-bottom: -2%;
+}
+input[type=text] {
+    border: none;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 20px;
+}
+input[type=email] {
+    border: none;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 20px;
+}
+#message {
+    border: none;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 20px;
+}
+.container3 {
+    display: flex;
+    justify-content: space-between;
+}
+.container6 {
+    display: flex;
+    justify-content: flex-end;
+}
+#submit {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 20px;
+    margin-top: 4%;
+    border: none;
+    background-color: #131418;
+    color: #ffffff;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+    width: 100%;
+}
+.socialmedia {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 8%;
+}
+.github {
+    width: 50px;
     border-radius: 50%;
 }
-li {
-    list-style: none;
+.linkedin {
+    width: 50px;
+    border-radius: 50%;
 }
-@media (max-width: 400px) {
-    nav > a {
-        padding: 7px 8px;
-        font-size: 12px;
+@media (max-width:450px) {
+    header {
+        font-size: 16px;
     }
     main {
-        margin-left: 5%;
-        margin-right: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 5%;
+        padding: 2%;
     }
-    big {
-        font-size: 22px;
+    input[type=text] {
+        width: 70%;
+        font-size: 16px;
     }
-    small {
-        font-size: 18px;
+    input[type=email] {
+        width: 70%;
+        font-size: 16px;
     }
-    p {
-        font-size: 14px;
+    #message {
+        width: 70%;
+        font-size: 16px;
     }
-    fieldset {
-        font-size: 14px;
+    h1 {
+        text-align: center;
     }
-    fieldset input[type="text"] {
-        width: 250px;
+    .contactme {
+        width: 100px;
+        height: 100px;
     }
-    fieldset input[type="email"] {
-        width: 250px;
+    .container1 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
     }
-    textarea {
-        width: 250px;
+    .container3 {
+        display: flex;
+        flex-direction: column;
+    }
+    .container6 {
+        display: flex;
+        justify-content: flex-start;
     }
     footer {
+        margin: 0;
+    }
+    .socialmedia {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+        width: 100%;
+    }
+    .github {
+        width: 70px;
+        border-radius: 50%;
+    }
+    .linkedin {
+        width: 70px;
+        border-radius: 50%;
     }
 }
