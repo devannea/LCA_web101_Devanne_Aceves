@@ -24,32 +24,6 @@ nav > a:hover {
 #active {
   color: #0EBEFF;
 }
-@keyframes enterAndDisappear {
-  from {
-    visibility:hidden;
-  }
-  25% {
-    visibility: visible;
-    font-size: 25px;
-  }
-  50% {
-    visibility:visible;
-    font-size: 36px;
-  }
-  75% {
-    visibility: visible;
-    font-size: 25px;
-  }
-  to {
-    visibility:hidden;
-  }
-}
-.enterAndDisappear {
-  animation-name: enterAndDisappear;
-  animation-delay: 4s;
-  animation-duration: 2s;
-  visibility: hidden;
-}
 main {
   display: flex;
   justify-content: center;
