@@ -53,6 +53,10 @@ main {
     margin: auto;
     display: block;
 }
+.SQUARES {
+    margin: auto;
+    display: block;
+}
 .video-and-form {
     grid-area: video-and-form;
 }
