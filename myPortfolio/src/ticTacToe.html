@@ -10,24 +10,29 @@
 </head>
 <body>
     <div class="game">
-        <div class="container">
-            <h1>PLAYER (X)</h1>
-            <h1>COMPUTER (O)</h1>
+        <div class="playerTitles">
+            <h1>PLAYER 1 (X)</h1>
+            <h1>PLAYER 2 (O)</h1>
         </div>
-        <div class="firstRow">
-            <div class="cell" id="r1c1" onclick="placeMark(this.id)"></div>
-            <div class="cell" id="r1c2" onclick="placeMark(this.id)"></div>
-            <div class="cell" id="r1c3" onclick="placeMark(this.id)"></div>
+        <div class="gameBoard">
+            <div class="square" id="sqr1" onclick="placeMark('square')"></div>
+            <div class="square" id="sqr2" onclick="placeMark('square')"></div>
+            <div class="square" id="sqr3" onclick="placeMark('square')"></div>
+            <div class="square" id="sqr4" onclick="placeMark('square')"></div>
+            <div class="square" id="sqr5" onclick="placeMark('square')"></div>
+            <div class="square" id="sqr6" onclick="placeMark('square')"></div>
+            <div class="square" id="sqr7" onclick="placeMark('square')"></div>
+            <div class="square" id="sqr8" onclick="placeMark('square')"></div>
+            <div class="square" id="sqr9" onclick="placeMark('square')">.</div>
         </div>
-        <div class="secondRow">
-            <div class="cell" id="r2c1" onclick="placeMark(this.id)"></div>
-            <div class="cell" id="r2c2" onclick="placeMark(this.id)"></div>
-            <div class="cell" id="r2c3" onclick="placeMark(this.id)"></div>
-        </div>
-        <div class="thirdRow">
-            <div class="cell" id="r3c1" onclick="placeMark(this.id)"></div>
-            <div class="cell" id="r3c2" onclick="placeMark(this.id)"></div>
-            <div class="cell" id="r3c3" onclick="placeMark(this.id)"></div>
+        <div class="instructions">
+            <h2>HOW TO PLAY:</h2><br>
+            <ul>
+                <li>Player 1 is X; Player 2 is O.</li>
+                <li>Player 1 goes first and will place an X in one of the squares.</li>
+                <li>Player 2 goes after Player 1 and will place an O in one of the squares.</li>
+                <li>Continue to take turns until a player is declared the winner by placing 3 X's or O's in a column, row, or diagnal line.</li>
+            </ul>
         </div>
     </div>
 </body>
