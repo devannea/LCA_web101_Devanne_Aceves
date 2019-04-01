@@ -9,31 +9,20 @@
     <title>Tic Tac Toe</title>
 </head>
 <body>
-    <div class="game">
-        <div class="playerTitles">
-            <h1>PLAYER 1 (X)</h1>
-            <h1>PLAYER 2 (O)</h1>
-        </div>
-        <div class="gameBoard">
-            <div class="square" id="sqr1" onclick="placeMark('square')"></div>
-            <div class="square" id="sqr2" onclick="placeMark('square')"></div>
-            <div class="square" id="sqr3" onclick="placeMark('square')"></div>
-            <div class="square" id="sqr4" onclick="placeMark('square')"></div>
-            <div class="square" id="sqr5" onclick="placeMark('square')"></div>
-            <div class="square" id="sqr6" onclick="placeMark('square')"></div>
-            <div class="square" id="sqr7" onclick="placeMark('square')"></div>
-            <div class="square" id="sqr8" onclick="placeMark('square')"></div>
-            <div class="square" id="sqr9" onclick="placeMark('square')">.</div>
-        </div>
-        <div class="instructions">
-            <h2>HOW TO PLAY:</h2><br>
-            <ul>
-                <li>Player 1 is X; Player 2 is O.</li>
-                <li>Player 1 goes first and will place an X in one of the squares.</li>
-                <li>Player 2 goes after Player 1 and will place an O in one of the squares.</li>
-                <li>Continue to take turns until a player is declared the winner by placing 3 X's or O's in a column, row, or diagnal line.</li>
-            </ul>
-        </div>
-    </div>
+    <section id="game-board">
+        <div id="square1" class="piece-block" onclick="placeMark('square1');"></div>
+        <div id="square2" class="piece-block" onclick="placeMark('square2');"></div>
+        <div id="square3" class="piece-block" onclick="placeMark('square3');"></div>
+        <div id="square4" class="piece-block" onclick="placeMark('square4');"></div>
+        <div id="square5" class="piece-block" onclick="placeMark('square5');"></div>
+        <div id="square6" class="piece-block" onclick="placeMark('square6');"></div>
+        <div id="square7" class="piece-block" onclick="placeMark('square7');"></div>
+        <div id="square8" class="piece-block" onclick="placeMark('square8');"></div>
+        <div id="square9" class="piece-block" onclick="placeMark('square9');"></div>
+    </section>
+    <section id="commands">
+        <button id="btnX" name="X" onclick="changeMarkerToX();">X</button>
+        <button id="btnO" name="X" onclick="changeMarkerToO();">O</button>
+    </section>
 </body>
 </html>
