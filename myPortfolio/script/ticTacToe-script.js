@@ -1,11 +1,16 @@
-currentPlayer = 1;
-function placeMark('square') {
-    var box=document.getElementsByClassName('square');
-    if currentPlayer === 1 {
-    box.innerHTML = "X";
-    }
-    else {    
-        box.innerHTML = "O";
-    }
-    currentPlayer = 0;
+var gameMarker = "X";
+
+function changeMarkerToX(){
+    gameMarker = "X";
+    // console.log("The X button was clicked!")
+}
+
+function changeMarkerToO(){
+    gameMarker = "O";
+    // console.log("The O button was clicked!")
+}
+
+function placeMark(divID){
+    var box = document.getElementById(divID);
+    box.innerHTML = gameMarker;
 }
