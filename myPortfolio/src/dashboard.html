@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../style/dashboard-style.css">
-    <script src="../script/jquery-3.3.1.min.js"></script>
-    <script src="../script/dashboard.js"></script> 
     <link href="https://fonts.googleapis.com/css?family=Catamaran:800" rel="stylesheet">
     <title>Dashboard</title>
 </head>
@@ -113,51 +111,14 @@
                     <button>/</button>
                 </div>
             </div>
-            <form class="flexcalculator">
-                <div class="newscreen"></div>
-                <div class="newfirstrow">
-                    <button class="nb">7</button>
-                    <button class="nb">8</button>
-                    <button class="nb">9</button>
-                    <button class="nb" id="plus">+</button>
-                </div>
-                <div class="newsecondrow">
-                    <button class="nb">4</button>
-                    <button class="nb">5</button>
-                    <button class="nb">6</button>
-                    <button class="nb" id="minus">-</button>
-                </div>
-                <div class="newthirdrow">
-                    <button class="nb">1</button>
-                    <button class="nb">2</button>
-                    <button class="nb">3</button>
-                    <button class="nb" id="times">*</button>
-                </div>
-                <div class="newfourthrow">
-                    <button class="nb" id="C">C</button>
-                    <button class="nb">0</button>
-                    <button class="nb" id="Eq">=</button>
-                    <button class="nb" id="over">/</button>
-                </div>
-            </form>
+            <div class="gridCalc">
+                div
+            </div>
         </aside>
         <div class="banner"><a href="https://lubbockcodingacademy.com/" target="_blank"><img src="../images/myLogo.svg" class="logo" alt="fake logo" width="200px"></a></div>
         <footer></footer>
     </div>
+    <script src="../script/jquery-3.3.1.min.js"></script>
+    <script src="../script/dashboard.js"></script> 
 </body>
-<script>
-        var x = document.getElementById("demo");
-        function getLocation() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(showPosition);
-        } else {
-            x.innerHTML = "Geolocation is not supported by this browser.";
-        }
-        }
-
-        function showPosition(position) {
-            x.innerHTML = "Latitude: " + position.coords.latitude + 
-            "<br>Longitude: " + position.coords.longitude; 
-        }
-</script>
 </html>
