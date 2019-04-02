@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="../style/dashboard-style.css">
     <script src="../script/jquery-3.3.1.min.js"></script>
     <script src="../script/dashboard.js"></script> 
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:800" rel="stylesheet">
     <title>Dashboard</title>
 </head>
 <body>
     <div class="container">
-        <header>Greetings, Stranger!</header>
+        <header>"Hello, Beautiful!"</header>
         <nav>
             <div id="list_section">
-                <h1 id="header">To-do list</h1>
+                <h1 id="header">To-do List</h1>
                 <ol id="TD-list">
                     <li class="item">Wash dishes</li>
                     <li class="item">Laundry</li>
@@ -24,21 +25,26 @@
                     <button href="#">new item</button></div>
                 <div>
                     <form id="newItemForm">
-                        <input type="text" id="itemField" placeholder="Item" />
-                        <input type="submit" id="add" value="New Task" />
+                        <input type="text" id="itemField" placeholder="New Task" />
+                        <input type="submit" id="add" value="Submit" />
                     </form>
                 </div>
             </div>
         </nav>
         <main>
+            <div class="geolocation">
+                <p><span id="instruct">Click the button to get your coordinates.</span></p><br>
+                <button id="getLocation" onclick="getLocation()">Click Me</button><br>    
+                <p id="demo"></p>
+            </div>
         </main>
         <aside>
             <div class="clock">
-                <div class="time">10:45 AM</div>
-                <div class="date">Monday February 28th</div>
+                <div class="time">7:30 PM</div>
+                <div class="date">Wednesday April 10th</div>
             </div>
             <div class="calendar">
-               <div class="month">February 2019</div>
+               <div class="month">April 2019</div>
                <div class="daysoftheweek">
                    <div>S</div>
                    <div>M</div>
@@ -49,10 +55,6 @@
                    <div>S</div>
                </div>
                <div class="days">
-                   <div class="lastmonth">27</div>
-                   <div class="lastmonth">28</div>
-                   <div class="lastmonth">29</div>
-                   <div class="lastmonth">30</div>
                    <div class="lastmonth">31</div>
                    <div>1</div>
                    <div>2</div>
@@ -82,8 +84,12 @@
                    <div>26</div>
                    <div>27</div>
                    <div>28</div>
+                   <div>29</div>
+                   <div>30</div>
                    <div class="nextmonth">1</div>
                    <div class="nextmonth">2</div>
+                   <div class="nextmonth">3</div>
+                   <div class="nextmonth">4</div>
                </div>
             </div>
             <div class="calculator">
@@ -139,4 +145,19 @@
         <footer></footer>
     </div>
 </body>
+<script>
+        var x = document.getElementById("demo");
+        function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+        }
+
+        function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude + 
+            "<br>Longitude: " + position.coords.longitude; 
+        }
+</script>
 </html>
