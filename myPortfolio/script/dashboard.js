@@ -31,3 +31,20 @@ var x = document.getElementById("demo");
             x.innerHTML = "Latitude: " + position.coords.latitude + 
             "<br>Longitude: " + position.coords.longitude; 
         }
+
+var gameMarker = "X";
+
+function changeMarkerToX(){
+    gameMarker = "X";
+    // console.log("The X button was clicked!")
+}
+
+function changeMarkerToO(){
+    gameMarker = "O";
+    // console.log("The O button was clicked!")
+}
+
+function placeMark(divID){
+    var box = document.getElementById(divID);
+    box.innerHTML = gameMarker;
+}
