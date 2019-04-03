@@ -391,4 +391,35 @@ footer {
         border-radius: 15px;
         font-size: 24px;
     }
+    .clock {
+        width: 100%;
+        padding: 3%;
+        background-color: #2D303A;
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 3%;
+        margin-right: 5%;
+    }
+    .calendar {
+        width: 125%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 5fr;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 3%;
+        margin-left: -25%;
+    }
+    .flexcalculator {
+        width: 100%;
+        background-color: #2D303A;
+        border: 5px solid #2D303A;
+        border-radius: 5px;
+        display: flexbox;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 3%;
+        margin-right: 5%;
+    }
 }
