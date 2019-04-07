@@ -358,6 +358,7 @@ footer {
         display: flex;
         justify-content: space-between;
         width: 20%;
+        margin-left: 0;
     }
     #save {
         font-family: 'Catamaran', sans-serif;
