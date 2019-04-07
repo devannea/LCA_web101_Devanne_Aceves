@@ -38,57 +38,49 @@ main {
     font-size: 14px;
 }
 .stressReliever {
-    background: #131418;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    color: #DB6B5C;
+    margin-bottom: 5%;
+}
+.kittyKontainer {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
-#game-board {
-    width: 225px;
-    height: 225px;
-    max-height: 225px;
-    min-height: 225px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.kitty {
+    width: 70%;
 }
-.piece-block {
-    background-color: #2D303A;
-    width: 75px;
-    height:75px;
-    border: 3px solid #131418;
-    font-size: 60px;
-    text-align: center;
-    color: #ffffff;
+.patcount {
+    font-size: 14px;
 }
-#commands {
-    margin-top: 15%;
-    width: 125px;
-    height: 125px;
-    max-height: 125px;
-    min-height: 125px;
-    text-align: center;
+#text {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 14px;
+    color: white;
+    background: #F4BE82;
+    border: none;
+}
+.buttons {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-left: 20%;
 }
-#btnX {
-    border: none;
-    background-color: #2D303A;
-    color: #ffffff;
-    width: 100px;
-    height: 50px;
-    border-radius: 15px;
-    font-size: 24px;
+#save {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 14px;
+    background-color: #F4BE82;
+    color: white;
+    border: 3px solid #DB6B5C;
 }
-#btnO {
-    border: none;
-    background-color: #2D303A;
-    color: #ffffff;
-    width: 100px;
-    height: 50px;
-    border-radius: 15px;
-    font-size: 24px;
+#load {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 14px;
+    background-color: #F4BE82;
+    color: white;
+    border: 3px solid #DB6B5C;
 }
 .calculator {
     margin: auto;
@@ -339,57 +331,47 @@ footer {
        line-height: 25px;
     }
     .stressReliever {
-        background: #131418;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        align-items: center;
+        color: #DB6B5C;
+    }
+    .kittyKontainer {
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
-    #game-board {
-        width: 300px;
-        height: 300px;
-        max-height: 300px;
-        min-height: 300px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+    .kitty {
+        width: 20%;
     }
-    .piece-block {
-        background-color: #2D303A;
-        width: 100px;
-        height:100px;
-        border: 3px solid #131418;
-        font-size: 72px;
-        text-align: center;
-        color: #ffffff;
+    .patcount {
+        font-size: 16px;
     }
-    #commands {
-        margin-top: 15%;
-        width: 150px;
-        height: 150px;
-        max-height: 150px;
-        min-height: 150px;
-        text-align: center;
+    #text {
+        font-family: 'Catamaran', sans-serif;
+        font-size: 16px;
+        color: white;
+        background: #F4BE82;
+        border: none;
+    }
+    .buttons {
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        width: 20%;
     }
-    #btnX {
-        border: none;
-        background-color: #2D303A;
-        color: #ffffff;
-        width: 100px;
-        height: 50px;
-        border-radius: 15px;
-        font-size: 24px;
+    #save {
+        font-family: 'Catamaran', sans-serif;
+        font-size: 16px;
+        background-color: #F4BE82;
+        color: white;
+        border: 3px solid #DB6B5C;
     }
-    #btnO {
-        border: none;
-        background-color: #2D303A;
-        color: #ffffff;
-        width: 100px;
-        height: 50px;
-        border-radius: 15px;
-        font-size: 24px;
+    #load {
+        font-family: 'Catamaran', sans-serif;
+        font-size: 16px;
+        background-color: #F4BE82;
+        color: white;
+        border: 3px solid #DB6B5C;
     }
     .clock {
         width: 100%;

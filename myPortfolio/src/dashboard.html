@@ -36,20 +36,17 @@
                 <p id="demo"></p>
             </div>
             <div class="stressReliever">
-                <div id="game-board">
-                    <div id="square1" class="piece-block" onclick="placeMark('square1');"></div>
-                    <div id="square2" class="piece-block" onclick="placeMark('square2');"></div>
-                    <div id="square3" class="piece-block" onclick="placeMark('square3');"></div>
-                    <div id="square4" class="piece-block" onclick="placeMark('square4');"></div>
-                    <div id="square5" class="piece-block" onclick="placeMark('square5');"></div>
-                    <div id="square6" class="piece-block" onclick="placeMark('square6');"></div>
-                    <div id="square7" class="piece-block" onclick="placeMark('square7');"></div>
-                    <div id="square8" class="piece-block" onclick="placeMark('square8');"></div>
-                    <div id="square9" class="piece-block" onclick="placeMark('square9');"></div>
+                <div><a onclick="add()" class="kittyKontainer"><img src="../images/klickableKitty.png" class="kitty" id="kitty" alt="kitty"></a></div>
+                <br><br>
+                <div class="patcount">
+                    You gave
+                    <input type="text" id="text" disabled style= text-align:center>
+                    pats.
                 </div>
-                <div id="commands">
-                    <button id="btnX" name="X" onclick="changeMarkerToX();">X</button>
-                    <button id="btnO" name="X" onclick="changeMarkerToO();">O</button>
+                <br><br>
+                <div class="buttons">
+                    <button id="save"><a onclick="save()">Save</a></button>
+                    <button id="load"><a onclick="load()">Load</a></button>
                 </div>
             </div>
         </main>
@@ -159,6 +156,7 @@
         <div class="banner"><a href="https://lubbockcodingacademy.com/" target="_blank"><img src="../images/myLogo.svg" class="logo" alt="fake logo" width="200px"></a></div>
         <footer></footer>
     </div>
+    <script src="../script/kittyKlicker-script.js"></script>
     <script src="../script/jquery-3.3.1.min.js"></script>
     <script src="../script/dashboard.js"></script> 
 </body>
