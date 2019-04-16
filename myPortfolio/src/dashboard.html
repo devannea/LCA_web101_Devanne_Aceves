@@ -105,58 +105,45 @@
                    <div class="nextmonth">4</div>
                </div>
             </div>
-            <div class="calculator">
-                <div class="screen"></div>
-                <div class="buttons">
-                    <button class="firstrow">7</button>
-                    <button class="firstrow">8</button>
-                    <button class="firstrow">9</button>
-                    <button class="firstrow">+</button>
-                    <button class="secondrow">4</button>
-                    <button class="secondrow">5</button>
-                    <button class="secondrow">6</button>
-                    <button class="secondrow">-</button>
-                    <button class="thirdrow">1</button>
-                    <button class="thirdrow">2</button>
-                    <button class="thirdrow">3</button>
-                    <button class="thirdrow">*</button>
-                    <button>C</button>
-                    <button>0</button>
-                    <button>=</button>
-                    <button>/</button>
+            <form>
+                <div id="calc">
+                    <input type="text" disabled id="results">
+                    <table>
+                        <tr>
+                            <td class="button" onclick="addNumber('1')">1</td>
+                            <td class="button" onclick="addNumber('2')">2</td>
+                            <td class="button" onclick="addNumber('3')">3</td>
+                            <td class="button notaNumber" onclick="addition()">+</td>
+                        </tr>
+                        <tr>
+                            <td class="button" onclick="addNumber('4')">4</td>
+                            <td class="button" onclick="addNumber('5')">5</td>
+                            <td class="button" onclick="addNumber('6')">6</td>
+                            <td class="button notaNumber" onclick="subtraction()">-</td>
+                        </tr>
+                        <tr>
+                            <td class="button" onclick="addNumber('7')">7</td>
+                            <td class="button" onclick="addNumber('8')">8</td>
+                            <td class="button" onclick="addNumber('9')">9</td>
+                            <td class="button notaNumber" onclick="multiplication()">*</td>
+                        </tr>
+                        <tr>
+                            <td class="button notaNumber" onclick="changeSigns()">+/-</td>
+                            <td class="button" onclick="addNumber('0')">0</td>
+                            <td class="button" id="equals" onclick="equals()">=</td>
+                            <td class="button notaNumber" onclick="division()">/</td>
+                        </tr>
+                        <tr>
+                            <td class="button" colspan="2" onclick="deleteLast()">Delete</td>
+                            <td class="button" colspan="2" onclick="clearResults()">Clear</td>
+                    </table>
                 </div>
-            </div>
-            <form class="flexcalculator">
-                <div class="newscreen"></div>
-                <div class="newfirstrow">
-                    <button class="nb">7</button>
-                    <button class="nb">8</button>
-                    <button class="nb">9</button>
-                    <button class="nb" id="plus">+</button>
-                </div>
-                <div class="newsecondrow">
-                    <button class="nb">4</button>
-                    <button class="nb">5</button>
-                    <button class="nb">6</button>
-                    <button class="nb" id="minus">-</button>
-                </div>
-                <div class="newthirdrow">
-                    <button class="nb">1</button>
-                    <button class="nb">2</button>
-                    <button class="nb">3</button>
-                    <button class="nb" id="times">*</button>
-                </div>
-                <div class="newfourthrow">
-                    <button class="nb" id="C">C</button>
-                    <button class="nb">0</button>
-                    <button class="nb" id="Eq">=</button>
-                    <button class="nb" id="over">/</button>
-                </div>
-            </form> 
+            </form>
         </aside>
         <div class="banner"><a href="https://lubbockcodingacademy.com/" target="_blank"><img src="../images/myLogo.svg" class="logo" alt="fake logo" width="200px"></a></div>
         <footer></footer>
     </div>
+    <script src="../script/calc-Func-script.js"></script>
     <script src="../script/kittyKlicker-script.js"></script>
     <script src="../script/jquery-3.3.1.min.js"></script>
     <script src="../script/dashboard.js"></script> 
