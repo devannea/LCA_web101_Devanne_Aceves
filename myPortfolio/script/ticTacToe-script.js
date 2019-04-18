@@ -1,14 +1,5 @@
-var gameMarker = "X";
-
-function changeMarkerToX(){
-    gameMarker = "X";
-    // console.log("The X button was clicked!")
-}
-
-function changeMarkerToO(){
-    gameMarker = "O";
-    // console.log("The O button was clicked!")
-}
+var currentPlayer = 0;
+var gameMarker = X;
 
 function placeMark(divID){
     var box = document.getElementById(divID);
