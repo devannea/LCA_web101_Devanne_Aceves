@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../style/ticTacToe-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:800" rel="stylesheet">
     <title>Tic Tac Toe</title>
 </head>
 <body>
@@ -18,6 +19,10 @@
         <div id="square7" class="piece-block" onclick="placeMark('square7');"></div>
         <div id="square8" class="piece-block" onclick="placeMark('square8');"></div>
         <div id="square9" class="piece-block" onclick="placeMark('square9');"></div>
+    </section>
+    <section class="buttons">
+        <button id="Xbtn" name="X" onclick="changeMarkerToX()">X</button>
+        <button id="Obtn" name="O" onclick="changeMarkerToO()">O</button>
     </section>
     <section>
         <h2>Command + R to Reset the Board</h2>
