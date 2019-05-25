@@ -4,61 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../style/portfolio-style.css" />
+    <link rel="stylesheet" href="../style/portfolio-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:800" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1 class="my-name">Devanne Aceves</h1>
-            <p class="web-dev">Web Development</p>
-            <div class="logo-container">
-                <img src="../images/myNewProfilePic.jpg" width="100px" height="100px" class="profile-picture">
-                <a href="https://lubbockcodingacademy.com/" target="_blank"><img src="../images/myLogo.svg" width="100px" class="logo"></a>
-            </div>
-        </header>
-        <main>
-            <div class="half-and-half">
-                <div class="projects">
-                    <a href="./NASA-landingPage.html"><img src="../images/NASA-thumbnail.jpg" width="250px" class="NASA"></a><br>
-                    <h3>NASA Landing Page</h3><br>
-                    <a href="./hair_landingPage.html"><img src="../images/HAIR-thumbnail.jpg" width="250px" class="HAIR"></a><br>
-                    <h3>Hair Salon Landing Page</h3><br>
-                    <a href="./dashboard.html"><img src="../images/DASH-thumbnail.jpg" width="250px" class="DASH"></a><br>
-                    <h3>Responsive Dashboard</h3>
-                    <a href="./transitioningSquares.html"><img src="../images/transitioningSquares.jpg" width="250px" class="SQUARES"></a><br>
-                    <h3>Transitioning Squares</h3>
+    <main>
+        <div class="container1">
+            <div class="container2">
+                <div class="Greeting">
+                    <h1>My Portfolio</h1>
+                    <p>Hello, my name is <span class="myname">Devanne Aceves</span> and I am a web developer student.<br>Welcome to my portfolio page! Here you will find all of my past and upcoming projects.<br>Please take a look around and don't hesitate to <span class="contactme"><a href="./contact.html" class="contactme">contact me</a></span> if you have any inquiries relating to me and or my work.</p>
                 </div>
-                <div class="video-and-form">
-                    <iframe class="iframe" width="224" height="126" src="https://www.youtube.com/embed/F9GujgK0y2M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
-                    <h3 id="too-high">Check Out This Video!</h3>
-                    <video class="pumpkin" controls width="250">
-
-                            <source src="../videos/Pumpkin.mp4"
-                                    type="video/webm">
-                        
-                            <source src="../videos/Pumpkin.mp4"
-                                    type="video/mp4">
-                        
-                              <p>Your browser doesn't support HTML5 video. Here is
-                             a <a href="https://youtu.be/uXmsBeVXA3I">link to the video</a> instead.</p>
-                        </video><br>
-                    <h3 id="too-low">This is Pumpkin the Hedgehog</h3>
-                    <h3 class="inquiry">For business inquiries, fill out the following form:</h3>
-                    <form>
-                        <input type="email" name="email" placeholder="email@address.com" id="email"><br>
-                        <input type="text" name="name" placeholder="Jane Doe" id="name"><br>
-                        <input type="text" name="location" placeholder="Austin, TX" id="location"><br>
-                        <textarea name="message" id="message" placeholder="Message..." cols="30" rows="7"></textarea><br>
-                        <input type="submit" name="submit" value="Submit" id="submit">
-                        <input type="reset" name="reset" value="Reset" id="reset">
-                    </form>
+                <div class="socialmedia">
+                    <a href="https://github.com/devannea"><img src="../images/github.png" class="github animated bounceInDown delay-2s duration-2s" alt="GitHub"></a>
+                    <a href="www.linkedin.com/in/devanne-aceves"><img src="../images/linkedin.png" class="linkedin animated bounceInDown delay-2s duration-2s" alt="LinkedIn"></a>
                 </div>
             </div>
-        </main>
-        <footer>
-            <a href="https://github.com/devannea"><img src="https://image.flaticon.com/icons/png/512/25/25231.png" class="github" width="40px"></a>
-        </footer>
-    </div>
+            <div class="container3">
+                <div class="container4">
+                    <div class="column">
+                        <a href="../index.html"><img src="../images/MyWebsite.jpg" alt="Picture of My Website" width="350px"></a>
+                        <p>My Website</p>
+                    </div>
+                    <div class="column">
+                        <a href="./NASA-landingPage.html"><img src="../images/NASA.jpg" alt="Picture of My NASA Landing Web Page" width="350px"></a>
+                        <p>NASA Landing Page</p>
+                    </div>
+                    <div class="column">
+                        <a href="./hair_landingPage.html"><img src="../images/Salon.jpg" alt="Picture of My Hair Salon Landing Web Page" width="350px"></a>
+                        <p>Hair Salon Landing Page</p>
+                    </div>
+                </div>
+                <div class="container5">
+                    <div class="column">
+                        <a href="./dashboard.html"><img src="../images/Dashboard.jpg" alt="Picture of My Dashboard Web Page" width="350px"></a>
+                        <p>Dashboard</p>
+                    </div>
+                    <div class="column">
+                        <a href="./transitioningSquares.html"><img src="../images/Squares.jpg" alt="Picture of My Transitioning Squares Web Page" width="350px"></a>
+                        <p>Transitioning Squares</p>
+                    </div>
+                    <div class="column">
+                        <a href="./ticTacToe.html"><img src="../images/TicTacToe.jpg" alt="Picture of My Tic Tac Toe Web Page" width="350px"></a>
+                        <p>Tic Tac Toe</p>
+                    </div>
+                </div>
+            </div>
+        </div>            
+    </main>
 </body>
 </html>
